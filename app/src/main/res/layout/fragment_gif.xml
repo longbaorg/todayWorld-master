@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/coloryellowss"
+            android:logo="@mipmap/ic_launcher">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_textview"
+                android:layout_gravity="left"
+                android:text="@string/gif"
+                android:textColor="@color/colordark"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="0dp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

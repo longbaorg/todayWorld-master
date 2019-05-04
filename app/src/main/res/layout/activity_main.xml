@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/news_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/news_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/tab_channel_pressed" />
+
+                <TextView
+                    android:id="@+id/news_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="主页"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gif_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/gif_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/tab_better_pressed" />
+
+                <TextView
+                    android:id="@+id/gif_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="gif"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/news_layout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" >-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:orientation="vertical" >-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/news_image"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:src="@drawable/news_unselected" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/news_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:text="动态"-->
+                    <!--android:textColor="#82858b" />-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/my_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/my_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/tab_my_pressed" />
+
+                <TextView
+                    android:id="@+id/my_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我的"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
