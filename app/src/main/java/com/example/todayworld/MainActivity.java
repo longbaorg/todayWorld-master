@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import com.example.todayworld.fragment.GIFFragment;
-import com.example.todayworld.fragment.MyFragment;
+import com.example.todayworld.fragment.MyFragments;
 import com.example.todayworld.fragment.NewsFragment;
 
 /**
@@ -35,7 +35,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     /**
      * 用于展示我的的Fragment
      */
-    private MyFragment myFragment;
+    private MyFragments myFragment;
 
     /**
      * 新闻界面布局
@@ -189,7 +189,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 myText.setTextColor(Color.WHITE);
                 if (myFragment == null) {
                     // 如果NewsFragment为空，则创建一个并添加到界面上
-                    myFragment = new MyFragment();
+                    myFragment = new MyFragments();
                     transaction.add(R.id.framelayout, myFragment);
                 } else {
                     // 如果NewsFragment不为空，则直接将它显示出来
